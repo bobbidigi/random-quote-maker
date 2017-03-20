@@ -5,7 +5,7 @@ function shuffle(array) {
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
 
-    // Pick a remaining element...
+  // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
@@ -20,7 +20,7 @@ function shuffle(array) {
 
 /************************/
 function getFont() {
-  var fonts = ['Amatic SC', 'Cookie8', 'Dancing Script', 'Dawning of a New Day', 'La Belle Aurore', 'League Script', 'Lily Script One', 'Lobster', 'Oleo Script Swash Caps', 'Pacifico', 'Pattaya', 'Poiret One', 'Poppins', 'Quicksand', 'Reenie Beanie', 'Satisfy', 'Shrikhand', 'Yanone Kaffeesatz']
+  var fonts = ['Amatic SC', 'Cookie8', 'Dawning of a New Day', 'La Belle Aurore', 'League Script', 'Lily Script One', 'Oleo Script Swash Caps', 'Pacifico', 'Pattaya', 'Poiret One', 'Poppins', 'Quicksand', 'Reenie Beanie', 'Satisfy', 'Shrikhand', 'Yanone Kaffeesatz']
 
   shuffle(fonts);
   return fonts.pop();
@@ -29,12 +29,11 @@ function getFont() {
 function getQuote(callback) {
   $.ajax({
     headers: {
-     
     "X-Mashape-Key": "CWLgxkJ5rumshUwxJnFYOkFN9dx5p1DvxsGjsnvZRWBsi7JW8b",
-      Accept: "application/json",
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=famous',
+    Accept: "application/json",
+    "Content-Type": "application/x-www-form-urlencoded"
+    },                                             
+    url: 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous',
     success: function(response) {
       var r = JSON.parse(response);
       $(".quote").html("\u201C" + r.quote + "\u201D");
@@ -54,7 +53,6 @@ function getPicture(callback) {
     url: url,
     cache: false,
     success: function(response) {
-      //$(".bg-div").css("background-image", response);
       $(".bg-div").css("background-image", "url(" + url + "=" + rand + ")");
       callback();
     }
@@ -64,8 +62,7 @@ function getPicture(callback) {
 function tweet() {
   var quote = document.getElementById("thequote").textContent;
   var author = document.getElementById("author").textContent;
-
-  console.log("tweet");
+  // console.log("tweet");
   var url = "http://twitter.com/share?text=" + encodeURIComponent(quote + '"') + encodeURIComponent("-" + author) + "&hashtags=famousQuote";
   window.open(url);
 }
@@ -100,5 +97,5 @@ $(document).ready(function() {
 
 
  /*"X-Mashape-Key": "wfCzrNcRT4msh2qGHhfQd1TWRRnUp1j3dNGjsnwBjxmBI3HcD8",*/
-
+//mashape.com/?cat=movies'
  //"wfCzrNcRT4msh2qGHhfQd1TWRRnUp1j3dNGjsnwBjxmBI3HcD8"
