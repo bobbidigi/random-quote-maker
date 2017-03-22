@@ -54,7 +54,6 @@ blockquote footer {
 }
 
 blockquote {
-  border: 0;
 }
 
 #tweet {
@@ -67,6 +66,7 @@ blockquote {
 #fb:hover, #fcc:hover {
   color: black;
   background-color: white;
+font-weight: bolder;    
 }
 
 #tweet:active,
@@ -75,21 +75,25 @@ blockquote {
   background-color: black;
 }
 #fcc {
-  color: #ffffff;
-  background-color: black;
-  border-radius: 100%;
+/*  color: #ffffff;*/
+/*  background-color: black;*/
+/*  border-radius: 100%;*/
   
 }
 #fb {
   color: #ffffff;
   background-color: black;
-  border-radius: 20%;
+  border-radius: 50%;
+  border-color:dodgerblue;
 }
 
+#social{
+    margin-left: 5%;
+}
 #new-quote {
   color: #ffffff;
   background-color: transparent;
-  border: 2px solid white;
+  border: 1px solid white;
   margin-right: 5%;
   font-size: 125%;
 }
@@ -106,12 +110,11 @@ blockquote {
 
 .credit {
   font-family: Oxygen, Helvetica, Sans-serif;
-  font-size: 145%;
+  font-size: 100%;
   color: #ffffff;
-  margin-top: 20px;
-  letter-spacing: 10px;
-/*   opacity: 0.7; */  
+  margin-top: 10px;
+  letter-spacing: 7px; 
 }
 .credit a{
-  
+    
 }

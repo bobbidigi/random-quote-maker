@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cookie|Dancing+Script|Dawning+of+a+New+Day|La+Belle+Aurore|League+Script|Lily+Script+One|Lobster|Oleo+Script+Swash+Caps|Pacifico|Pattaya|Poiret+One|Poppins|Quicksand|Reenie+Beanie|Satisfy|Shrikhand|Yanone+Kaffeesatz" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jq
@@ -23,17 +24,32 @@ uery.min.js"></script>
 <body>
     <div id="wrapper" class="container-fluid bg-div">
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 sheet">
+            <div class="col-sm-8 col-sm-offset-2 sheet text-center">
                 <blockquote>
                     <p class="text-center quote" id="thequote">"Super-cool random quotes "</p>
                     <footer id="author">Robert Allen</footer>
                 </blockquote>
-                <button id="tweet" class="btn"> <i class="fa fa-twitter fa-3x"></i> </button>
-                <button id="fb" class="btn"> <i class="fa fa-facebook fa-3x"></i> </button>
+                <hr>
+            <div class="row">    
+                <div id="social" class="pull-left">
+                <i id="tweet" class="btn btn-success fa fa-twitter fa-4x"></i>
+                <i id="fb" class="btn btn-succes fa fa-facebook fa-4x"></i>
+                </div>
+                
                 <button id="new-quote" class="btn pull-right">New Quote</button>
             </div>
+            
+            </div>
         </div>
-        <p class="credit text-center">By:<a href="http://codepen.io/bobbidigi34/full/GNmbNa/" target="_blank"> Robert Allen</a></p>
+        <br>
+        <br>
+        <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+          <div class="container">
+            <div>
+                <h3 class="text-center">Quote-Maker</h3>
+                <p class="credit text-center align-bottom">By:<a href="http://www.allentowngroup.com/about-robert-allen/" target="_blank"> Robert Allen</a></p></div>
+          </div>
+        </nav>
     </div>
     <script src="script.js"></script> 
 </body>

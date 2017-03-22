@@ -77,7 +77,7 @@ function loading() {
 }
 
 function onClick() {
-  $(".bg-div").fadeOut("500", function() {
+  $(".bg-div").fadeOut("1000", function() {
     getPicture(function() {
       getQuote(function() {
         $(".bg-div").fadeIn("500");
