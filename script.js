@@ -20,7 +20,7 @@ function shuffle(array) {
 
 /************************/
 function getFont() {
-  var fonts = ['Amatic SC', 'Cookie8', 'Dawning of a New Day', 'La Belle Aurore', 'League Script', 'Lily Script One', 'Oleo Script Swash Caps', 'Pacifico', 'Pattaya', 'Poiret One', 'Poppins', 'Quicksand', 'Reenie Beanie', 'Satisfy', 'Shrikhand', 'Yanone Kaffeesatz']
+  var fonts = ['Amatic SC', 'Cookie8','monospace','roboto', 'Dawning of a New Day', 'La Belle Aurore', 'League Script', 'Lily Script One', 'Oleo Script Swash Caps', 'Pacifico', 'Pattaya', 'Poiret One', 'Poppins', 'Quicksand', 'Reenie Beanie', 'Satisfy', 'Shrikhand', 'Yanone Kaffeesatz']
 
   shuffle(fonts);
   return fonts.pop();
