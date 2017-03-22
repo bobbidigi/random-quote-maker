@@ -68,7 +68,7 @@ function tweet() {
 }
 
 function share() {
-  var url = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent("http://codepen.io/bobbidigi34/full/pRRpXW/");
+  var url = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent("http://www.allentowngroup.com/random-quote-maker/");
   window.open(url);
 }
 
